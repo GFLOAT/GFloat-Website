@@ -1,0 +1,11 @@
+# Put sterling-specific config in this file, which overrides the defaults in values.yaml
+
+ingress:
+  hosts:
+    - host: gfloat-website.apps.renci.org
+      paths:
+        - path: /
+  tls:
+   - secretName: gfloat-website.apps.renci.org-tls
+     hosts:
+       - gfloat-website.apps.renci.org

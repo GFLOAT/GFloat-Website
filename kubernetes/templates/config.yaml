@@ -2,4 +2,4 @@ apiVersion: v1
 data:
 kind: ConfigMap
 metadata:
-  name: neurobridge-website-configmap
+  name: gfloat-website-configmap

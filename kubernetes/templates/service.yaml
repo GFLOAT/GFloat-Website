@@ -1,9 +1,9 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: {{ include "neurobridges.fullname" . }}
+  name: {{ include "gfloat.fullname" . }}
   labels:
-    {{- include "neurobridges.labels" . | nindent 4 }}
+    {{- include "gfloat.labels" . | nindent 4 }}
 spec:
   type: ClusterIP
   ports:
@@ -12,4 +12,4 @@ spec:
       protocol: TCP
       name: http
   selector:
-    {{- include "neurobridges.selectorLabels" . | nindent 4 }}
+    {{- include "gfloat.selectorLabels" . | nindent 4 }}

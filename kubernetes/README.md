@@ -1,2 +1,2 @@
-# NeuroBridges Website-Chart
-Helm Chart for the NeuroBridge website
+# G-FLOAT Website-Chart
+Helm Chart for the G-FLOAT website
