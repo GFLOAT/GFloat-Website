@@ -1,7 +1,7 @@
 import { graphql, useStaticQuery } from 'gatsby'
 
 const publicationsQuery = graphql`{
-  webinars: allWebinarsYaml(sort: {fields: date, order: DESC})  {
+  webinars: allWebinarsYaml(sort: {date: DESC}) {
     nodes {
       title
       date
