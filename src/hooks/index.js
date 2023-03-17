@@ -1,4 +1,5 @@
+export * from './use-about'
 export * from './use-generic-avatar'
-export * from './use-team'
-export * from './use-publications'
 export * from './use-institutions'
+export * from './use-publications'
+export * from './use-team'

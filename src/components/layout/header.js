@@ -8,20 +8,13 @@ import { Box, Link as MuiLink, Drawer, IconButton, Button, MenuItem, Popover, Ty
 import { useTheme } from '@mui/material/styles'
 
 const mainMenuLinks = [
-  { text: 'Resources',      path: '/software' },
-  { text: 'Publications',   path: '/publication' },
+  { text: 'Resources',      path: '/resources' },
+  { text: 'Publications',   path: '/publications' },
 
 ]
 const aboutUs = [
-    { text: 'What is NeuroBridge?',         path: '/about' },
+    { text: 'What is G-FLOAT?',              path: '/about' },
     { text: 'Our Team',                     path: '/team' },
-    { text: 'Participating Institutions',   path: '/institutions' },
-]
-
-/* eslint-disable no-unused-vars */
-const resources = [
-  { text: 'Resources',      path: '/software' },
-  { text: 'Publications',   path: '/publications' },
 ]
 
 const Header = ({ siteTitle }) => {
@@ -36,9 +29,11 @@ const Header = ({ siteTitle }) => {
       alignItems: 'center',
       justifyContent: 'space-between',
       backgroundColor: 'white',
-      padding: '10px 30px',
+      pr: theme.spacing(4),
+      py: theme.spacing(5),
       zIndex: '10',
-      height: '5rem'
+      height: '5rem',
+      filter: 'drop-shadow(0 0 4px #00000066)',
     },
     brand: {
       margin:'0 1rem 0 2rem',
@@ -122,15 +117,12 @@ const Header = ({ siteTitle }) => {
     active: {
     },
     menuToggler: {
-      // position: 'fixed',
-      // top: '0',
       right: '1rem',
       zIndex: '999',
     }
   }
 
   const compact = useMediaQuery('(max-width: 1142px)');
-  // const router = useRouter()
   const [menuOpen, setMenuOpen] = useState(false)
 
   // MUI code for dropdown menu
@@ -149,14 +141,13 @@ const Header = ({ siteTitle }) => {
   }
 
   return (
-
     <Box component="header" sx={styles.root}>
       <MuiLink 
         component={Link}
         to='/'
         sx={styles.brand}
       >
-        <Typography variant='h1' sx={styles.logo}>NeuroBridge</Typography>
+        <Typography variant='h1' sx={styles.logo}>G-FLOAT</Typography>
       </MuiLink>
       {
         compact && (
@@ -168,7 +159,7 @@ const Header = ({ siteTitle }) => {
                 sx={ styles.brand } 
                 style={{ margin: '1rem auto' }}
               >
-                <Typography variant='h1' sx={styles.logo}>NeuroBridge</Typography>
+                <Typography variant='h1' sx={styles.logo}>G-FLOAT</Typography>
               </MuiLink>
               <MuiLink
                 component={Link}
@@ -176,7 +167,7 @@ const Header = ({ siteTitle }) => {
                 key={ `mobile-main-menu-home` }
                 sx={styles.mobileMenuItem}
                 onClick={ () => setMenuOpen(false) }
-              >About Us</MuiLink>
+              >About</MuiLink>
               {
                 aboutUs.map(({ path, text }) => (
                     <MuiLink
@@ -201,14 +192,6 @@ const Header = ({ siteTitle }) => {
                   >{ text }</MuiLink>
                 ))
               }
-              <MuiLink
-                component={Link}
-                href='https://neurobridges-portal-staging.netlify.app/'
-                sx={styles.mobileMenuItem}
-                onClick={ () => setMenuOpen(false) }
-              >
-                Search Portal
-              </MuiLink>
             </Drawer>
             <IconButton
               sx={ styles.menuToggler }
@@ -277,9 +260,6 @@ const Header = ({ siteTitle }) => {
                   >{ text }</MuiLink>
                 ))
               }
-                <Button variant="contained" href='https://neurobridges-portal-staging.netlify.app/' color='secondary' sx={{textTransform: 'none'}}>
-                  Search Portal
-                </Button>
             </Box>
         )
       } 

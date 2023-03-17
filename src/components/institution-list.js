@@ -1,38 +1,50 @@
-import * as React from "react"
+import * as React from 'react'
 import { Link } from './link'
 import { GatsbyImage, getImage } from "gatsby-plugin-image"
-import { Box } from '@mui/material'
+import { Box, useTheme } from '@mui/material'
 import { useInstitutions } from '../hooks'
 
-const InstitutionList = () => {
+export const InstitutionList = ({ imageWidth }) => {
   const institutions = useInstitutions()
-  const styles = {
-      logo: {
-          filter: 'opacity(.5) saturate(.5)',
-          transition: 'all 0.4s ease-in-out',
-          '&:hover': {
-            filter: 'opacity(1) saturate(1)',
-            transform: 'scale(1.1)'
-          }
+  const theme = useTheme()
+
+  const style = {
+    container: {
+      display: 'flex',
+      flexWrap: 'wrap',
+      justifyContent: 'center',
+      alignItems: 'center',
+      gap: theme.spacing(4),
+      '.image': {
+        filter: 'opacity(0.75) saturate(0.5)',
+        transition: 'filter 250ms',
+        '&:hover': {
+          filter: 'opacity(1) saturate(1)',
+        }
       },
+    },
   }
 
   return (
-    <React.Fragment>
-      {institutions.map(( item ) => {
-        const logo = getImage(item.image)
-        return (
-          <Link to={item.link} key={item.name}>
-            <Box sx={styles.logo}>
+    <Box sx={ style.container }>
+      {
+        institutions.map(( item ) => {
+          const logo = getImage(item.image)
+
+          return (
+            <Link
+              to={ item.link }
+              key={ `partner-link-${ item.name }` }
+            >
               <GatsbyImage
-                image={logo}
-                alt={item.name}
+                className="image"
+                image={ logo }
+                alt={ item.name }
               />
-            </Box>
-          </Link>
-        )
-      })}
-    </React.Fragment>
+            </Link>
+          )
+        })
+      }
+    </Box>
   )
 }
-export default InstitutionList

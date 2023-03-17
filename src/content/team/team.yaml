@@ -1,79 +1,9 @@
-- name: Abhishek Appaji
-  lastName: Appaji
-  photo: ./appaji-abhishek.jpg
-  bio: Abhishek obtained his Bachelor of Engineering in Medical Electronics with University Rank from BMSCE, India, and a Masters of Engineering (M.E) in Bioinformatics from University Visvesvaraya College of Engineering, India. His Ph.D. was in Mental Health and Neurosciences from Maastricht University, the Netherlands which received the Best Thesis award. He is currently working as Assistant Professor in the department of Medical Electronics, BMSCE, India, and aspiring to join as a Post-doc at Ohio State University, USA.
+- name: Christopher Bizon
+  lastName: Bizon
+  photo: ./christopher-bizon.jpg
+  institution: Renaissance Computing Institute, UNC-Chapel Hill
 
-- name: Jose Luise Ambite
-  lastName: Ambite
-  photo: ./ambite-jose-luis.jpeg
-  bio: Dr. Ambite is an Associate Professor of Computer Science, and a Research Team Leader at the Information Sciences Institute, both at the University of Southern California. His core expertise is on information integration, including query rewriting under constrains, learning schema mappings, and entity linkage. He has research interests in databases, knowledge representation, semantic web, scientific workflows, federated learning, biomedical informatics, and genetics.
-
-- name: Daniel Marcus
-  lastName: Marcus
-  photo: ./marcus-daniel.jpeg
-  bio: Dr. Marcus, Professor of Radiology at Washington University School of Medicine in St.Louis laboratory builds imaging informatics and analysis tools, with a particular focus on neuroimaging. The laboratory has developed the XNAT imaging informatics platform (www.xnat.org), open source software used in facilities around the world to manage and share neuroimaging and related data. Dr. Marcus directs a number of service cores at the University, including for the Alzheimer's Disease Research Center, the Intellectual Developmental Disabilities Research Center, and NINDS Center Core for Brain Imaging. He's also an investigator in several NIH-backed initiatives to develop a national informatics infrastructure, including the Biomedical Informatics Research Network (BIRN), the National Alliance for Medical Image Computing (NAMIC), and Informatics for Integrating Biology and the Bedside (I2B2).
-
-- name: Will Horton
-  lastName: Horton
-  photo: ./horton-will.jpeg
-  bio: This is a quick bio of Will.
-
-- name: Howard Lander
-  lastName: Lander
-  photo: ./lander-howard.png
-  bio: Mr. Lander joined the Renaissance Computing Institute in April 2005 and has worked extensively here with the application of Cyber Science and Engineering to data intensive scientific disciplines including neuroscience, physical oceanography and evolutionary biology. In particular Mr. Lander was an active participant in both the Southeastern Universities Research Association (SURA) Coastal Ocean Observing and Prediction Program (SCOOP) and North Carolina Flood Mapping (NCFMP) projects. Mr. Lander is currently a Co-PI on the NeuroBridge, a NIDA funded project whose goals are to increase the discoverability of relevant data in the neurosciences. From 2012 to 2015, Mr. Lander was a Co-PI on the DataBridge project, an NSF funded research effort investigating the use of sociometric techniques to produce a Facebook like social network for data sets from the long tail of science. From 2016 to 2017 Mr. Lander was a CO-PI on the DataBridge for NeuroScience project, an NSF funded follow-up to the DataBridge. As part of this project, Mr. Lander chaired the INCF 2018 Workshop on Advanced Data Discovery for Neuroscience which occurred at INCF's Neuroinformatics 2018 meeting.
-
-- name: Janine Bijsterbosch
-  lastName: Bijsterbosch
-  photo: ./bijsterbosch-janine.jpeg
-  bio: "Dr. Bijsterbosch's research focuses on functional brain networks to investigate brain connectivity from three different angles: Firstly, Dr. Bijsterbosch uses population datasets such as the UK Biobank to study individual differences in brain connectivity and their potential to predict risk and resilience to mental health disorders such as depression. Secondly, Dr. Bijsterbosch works on methodological challenges in relation representing high-dimensional resting state functional MRI data into a lower dimensional set of features that are sensitive and interpretable. Thirdly, Dr. Bijsterbosch performs cross-scale research in collaboration with Dr. Larry Snyder to determine how large-scale networks observed with functional MRI behave at the level of individual neural cells."
-
-- name: Rick Herrick
-  lastName: Herrick
-  photo: ./herrick-rick.png
-  bio: Lead developer and architect on the XNAT open-source imaging informatics platform.
-
-- name: Jessica Turner
-  lastName: Turner
-  photo: ./turner-jessica.jpeg
-  bio: Dr. Turner investigates the genetics underlying brain structure changes in chronic schizophrenia, as well as the genetic influences on functional and structural neuroimaging measures in other neuropsychological diseases. The required large scale data sharing and analysis requires flexible and robust data standards and common methods for extracting information from the scientific literature.
-
-- name: Alex Kogan
-  lastName: Kogan
-  photo: ./kogan-alex.jpg
-  bio: Alex Kogan has worked in the field of medical imaging for more than 20 years. He joined the Department of Radiology at Northwestern University in 1998 and worked in the Imaging Informatics research lab for 12 years, providing computing assistance to informatics research, presenting at conferences, participating in industry events related to medical imaging standardization and interoperability. Alex took part in numerous research projects, providing full-cycle software development, Linux system administration and system analysis. In 2009, Alex joined the Neuroimaging and Applied Computational Anatomy Lab (NIACAL) in the Department of Psychiatry and applied his expertise to establish an XNAT instance of the Northwestern University Neuroimaging Data Archive (NUNDA) at Northwestern. At NIACAL he administered NUNDA, managed the research infrastructure, took part in numerous research and integration projects and authored research publications. In 2020, Alex joined the Department of Psychiatry and Behavioral Health at Ohio State University in the capacity of Senior Software Development Analyst. Alex has a B.S. in Computer Science from DePaul University and an M.S. in Medical Informatics from Northwestern University.
-
-- name: Lei Wang
-  lastName: Wang
-  photo: ./wang-lei.jpg
-  bio: "Dr. Lei Wang's lab research is focused on the development of multidimensional and multimodal neuroimaging biomarkers using the tools of computational anatomy. Working with collaborators from engineering, mathematics, psychology and clinical specialties, the team focuses on the following major areas: Mapping of Brain Structures using MRI. Dr. Wang develops automated pipelines to delineate brain structures based on simultaneous mappings of multiple structures from multiple atlases. This includes deep brain structures (such as the hippocampus, amygdala, thalamus, and basal ganglia) and cortical structures.Complex Neuroimaging Biomarkers. They develop modeling and statistical approaches for the analysis of these maps and frameworks for joint, integrated analyses of multidimensional, multimodal information based on the structural mapping of the brain."
-
-- name: Stephen M. Moore
-  lastName: Moore
-  photo: null
-  bio: This is a quick bio of Stephen M. Moore
-
-- name: Mathew Turner
-  lastName: Turner
-  photo: null
-  bio: Matthew Turner, PhD, is a computational scientist in the department of psychology at Georgia State University. His current research focuses on automated text processing and machine learning in scientific literature analysis, meta-analysis of large scale data sets, "moral injury" in civilian populations, electrophysiological signatures of altered states of consciousness (such as meditation and hypnosis), and beliefs in unusual personal experiences. His prior work has been in acoustics and the psychology of hearing, signal processing, and computational science.
-
-- name: Petra Lenzini, MS
-  lastName: Lenzini
-  photo: ./lenzini-petra.jpg
-  bio: Petra Lenzini is a Research Statistician with the Mallinckrodt Institute of Radiology at Washington University School of Medicine in St. Louis. As part of the Connectome Coordination Facility. She works closely with NIMH Data Archive Curators, XNAT developers, and Clinical Research partners to clean, shape, move, and facilitate public access to complex research datasets.
-
-- name: Satya S. Sahoo
-  lastName: Sahoo
-  photo: ./sahoo-satya.jpeg
-  bio: Interested in integrative analysis of brain connectivity data for characterizing spatiotemporal characteristics of epilepsy seizure networks using computational neuroscience approaches. To address the challenges of data quality and scientific reproducibility in data-driven biomedical research we are also developing a provenance metadata framework using provenance ontology and text mining of published articles.
-
-- name: Arcot Rajasekar
-  lastName: Rajasekar
-  photo: ./rajasekar-arcot.jpeg
-  bio: Dr. Arcot Rajasekar is a Professor at the UNC School of Information and Library Science (SILS) and a Chief Scientist at the Renaissance Computing Institute(link is external) (RENCI). Previously he was at the San Diego Supercomputer Center at the University of California, San Diego, leading the Data Grids Technology Group. He has been involved in research and development of data grid middleware systems for over a decade and is a lead originator behind the concepts in the Storage Resource Broker (SRB) and the integrated Rule Oriented Data Systems (iRODS)(link is external), two premier data grid middleware developed by the Data Intensive Cyber Environments (DICE) Group.A leading proponent of policy-oriented, large-scale data management, Dr. Rajasekar has several research projects funded by the National Science Foundation, the National Archives, National Institute of Health and other federal agencies. He has more than 150 publications in the areas of data grids, digital library, persistent archives, logic programming, and artificial intelligence. His latest projects include the Datanet Federation Consortium and DataBridge, building a social network platform for scientific data.
-
-- name: Yue (Ray) Wang
-  lastName: Wang
-  photo: ./wang-yue.jpeg
-  bio: Yue Wang is an assistant professor in the School of Information and Library Science in the University of North Carolina at Chapel Hill. His research interests include text mining, machine learning, and information retrieval. His recent work focuses on designing and evaluating interactive and interpretable machine learning algorithms that can help scientists gain knowledge from large unstructured text. He publishes in a broad range of venues in computer and information sciences, including SIGIR, WSDM, CIKM, ACL, WWW, KDD, CHI, AMIA, and JAMIA. He serves as a regular program committee member for WSDM, SIGIR, and WWW. He received the Best Paper Award in WSDM 2016 and Outstanding Program Committee Member Award in WSDM 2016, 2019, and 2020.
+- name: Leila Hashemi-Beni
+  lastName: Hashemi-Beni
+  photo: ./leila-hashemi-beni.jpg
+  institution: Built Environment, College of Science and Technology, N.C. A&T

@@ -1,7 +1,17 @@
-- title: Enabling Scientific Reproducibility through FAIR Data Management
-  citation: "Wang X, Wang Y, Ambite J-L, Appaji A, Lander H, Moore SM, Rajasekar
-    AK, Turner JA, Turner MD, Wang L, Sahoo SS. Enabling Scientific
-    Reproducibility through FAIR Data Management: An ontology-driven deep
-    learning approach in the NeuroBridge Project. AMIA 2022 Annual Symposium
-    Washington DC 2022."
-  link: https://drive.google.com/file/d/1zakNhguxA1gluboqlJLnw6XGpSdwmTaD/view
+- title: "Lorem ipsum elit: ut exercitation anim aute fugiat amet amet"
+  citation: >
+    Laboris sunt deserunt ad adipisicing sed est nostrud voluptate voluptate.
+    Lorem ipsum mollit minim consequat nostrud duis nostrud veniam pariatur
+    laborum id labore ad dolore sunt nostrud sunt in nulla proident. Proident
+    ea deserunt fugiat commodo nisi aliquip sed et irure deserunt cillum sit
+    sit aliquip cupidatat. Lorem ipsum duis sunt et sed dolor ut eiusmod anim
+    elit sunt cillum in.2022.
+  url: https://example.org/paper
+
+- title: "Pariatur anim in IRURE do deserunt"
+  citation: >
+    Veniam quis fugiat ut cillum sunt cillum do nulla amet labore aute
+    adipisicing magna ut ut consequat nisi. Duis sunt id fugiat non
+    proident adipisicing sint cupidatat ut incididunt qui cupidatat
+    aliqua dolor pariatur ad nostrud 2022.
+  url: https://example.gov/paper

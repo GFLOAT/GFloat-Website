@@ -1,20 +1,16 @@
 import { graphql, useStaticQuery } from 'gatsby'
 
-const teamQuery = graphql`{
+const teamQuery = graphql`query teamQuery {
   team: allTeamYaml(sort: {lastName: ASC}) {
     nodes {
       name
       lastName
-      bio
-      photo {
-        id
-        childImageSharp {
-          gatsbyImageData(width: 400)
-        }
-      }
+      institution
+      photo
     }
   }
-}`
+}
+`
 
 export const useTeam = () => {
   const { team } = useStaticQuery(teamQuery)

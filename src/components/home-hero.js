@@ -2,12 +2,12 @@ import * as React from "react"
 /* eslint-disable no-unused-vars */
 import { Link } from './link'
 import { Slide, Typography, Button, Box } from '@mui/material'
-import welcomeNB from '../images/slide/PdG.jpeg'
+import welcomeNB from '../images/PdG.jpeg'
 import { useTheme } from '@mui/material/styles'
 
 const content = {
-  title: 'Welcome to NeuroBridge',
-  subtitle: 'A platform for data discovery to enhance the reuse of clinical neuroscience/ neuroimaging data. We develop the NeuroBridge ontology, and combine machine learning with ontology-based search of both neuroimaging repositories (e.g. XNAT databases) and open-access full text journals (such as PubMed Central).'
+  title: 'Welcome to G-FLOAT',
+  subtitle: 'Utilizing 34 complex data streams from sources such as weather, humans, built infrastructure, and power, the team will pilot an emergency response data modeling tool generalizable enough to be useful in contexts within and outside of North Carolina.'
 }
 
 const HomeHero = () => {

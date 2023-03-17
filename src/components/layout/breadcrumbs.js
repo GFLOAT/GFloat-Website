@@ -1,6 +1,6 @@
 import React from "react"
 import { Link } from '../link'
-import { Box, Link as MuiLink, Typography, Breadcrumbs }  from '@mui/material'
+import { Box, Typography, Breadcrumbs }  from '@mui/material'
 import { useTheme } from '@mui/material/styles'
 
 function handleClick(event) {
@@ -13,44 +13,52 @@ const BreadcrumbNav = ({ crumbs, title }) => {
 
   const styles = {
     root: {
-      margin: '16px 0px 26px',
+      mt: '6px',
+      mb: theme.spacing(5),
       display: 'flex',
       justifyContent: 'flex-end',
       alignItems: 'center',
       backgroundColor: theme.palette.grey.A100,
-      padding: '10px 40px 5px',
+      px: theme.spacing(5),
+      pt: theme.spacing(1),
+      pb: theme.spacing(0),
     },
-    pathLink: {
-      color: theme.palette.text.secondary, //red
+    crumb: {
+      color: theme.palette.text.secondary,
       textDecoration: 'none',
     },
     finalCrumb: {
-      color: theme.palette.text.primary, //grey
+      color: theme.palette.text.primary,
     },
 }
 
   return (
       <>
-        <Box role="presentation" onClick={handleClick} sx={styles.root}>
-          <Breadcrumbs aria-label="breadcrumb" sx={styles.container}>
-          {
-            crumbs.map(({ text, path }, i) => {
-              if (i + 1 === crumbs.length) {
-                return <Typography key={ path } sx={styles.finalCrumb}>{ text }</Typography>
-              }
-              return (
-                <Typography key={ path }>
-                  <MuiLink 
-                    component={Link}
+        <Box role="presentation" onClick={ handleClick } sx={ styles.root }>
+          <Breadcrumbs
+            aria-label="breadcrumb"
+            sx={ styles.container }
+          >
+            {
+              crumbs.map(({ text, path }, i) => {
+                if (i + 1 === crumbs.length) {
+                  return (
+                    <Typography
+                      key={ path }
+                      sx={ styles.finalCrumb }
+                    >{ text }</Typography>
+                  )
+                }
+                return (
+                  <Box 
+                    key={ path }
+                    component={ Link }
                     to={ path } 
-                    sx={styles.pathLink}
-                  >
-                    { text }
-                  </MuiLink>
-                </Typography>
-              )
-            })
-          }
+                    sx={ styles.crumb }
+                  >{ text }</Box>
+                )
+              })
+            }
           </Breadcrumbs>
 
         </Box>

@@ -1,23 +1,23 @@
 import { graphql, useStaticQuery } from 'gatsby'
 
-const publicationsQuery = graphql`{
+const publicationsQuery = graphql`query publicationsQuery {
   webinars: allWebinarsYaml(sort: {date: DESC}) {
     nodes {
       title
       date
-      displayDate
       description
-      slides
+      url
     }
   }
   papers: allPapersYaml {
     nodes {
       title
       citation
-      link
+      url
     }
   }
-}`
+}
+`
 
 export const usePublications = () => {
   const { webinars, papers } = useStaticQuery(publicationsQuery)

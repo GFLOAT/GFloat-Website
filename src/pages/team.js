@@ -52,13 +52,12 @@ const TeamPage = () => {
     const genericAvatar = useGenericAvatar()
     const breadcrumbs = [
         { text: 'Home', path: '/' },
-        { text: 'About NeuroBridge', path: '/about' },
         { text: 'Our Team', path: '/team' },
     ]
     
     return (
         <>
-            <Seo title="NeuroBridge Team" />
+            <Seo title="G-FLOAT Team" />
             <BreadcrumbNav crumbs={breadcrumbs} title="Our Team"/>
             <Container>
                 <Typography variant='h1'>Our Team</Typography>
@@ -76,7 +75,7 @@ const TeamPage = () => {
                                     </CardMedia>
                                     <CardContent sx={styles.cardContent}>
                                         <Typography variant='h2' sx={styles.teamName}>{person.name}</Typography>
-                                        <Typography paragraph sx={styles.teamBio}>{person.bio}</Typography>
+                                        <Typography paragraph sx={styles.teamBio}>{person.institution}</Typography>
                                     </CardContent>
                                 </Card>
                             </Grid>

@@ -8,7 +8,7 @@ const institutionsQuery = graphql`{
       image {
         id
         childImageSharp {
-          gatsbyImageData(height: 150)
+          gatsbyImageData(width: 150)
         }
       }
     }

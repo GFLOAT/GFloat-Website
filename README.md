@@ -5,22 +5,19 @@
 
 This website is intended to provide information about the GFLOAT project, and it was built with [GatsbyJS](https://www.gatsbyjs.com/).
 
-## Installation
+## Getting Started
 
-- To run locally, clone this repo and install dependencies with `npm i`.
-- When proposing changes, always verify the build process runs without error locally with `npm run build`. Serve the built application on port `localhost:9000` with `npm run serve`.
 
 ## Development
 
-Spin up the development server on [http://localhost:8000](http://localhost:8000) by running `npm start`. 
+Develop this site using Node ~18.0.0.
+First clone this repo and install dependencies with `npm i`.
+Spin up the development server on [http://localhost:8000](http://localhost:8000) with `npm start`. 
 
 ## Content Management
 
 You will be able to access the content via an interactive GraphQL playground at [http://localhost:8000/__graphql](http://localhost:8000/__graphql) in your browser.
-The content for this website lives as YAML files inside the `content`. There are a few content types:
-- team members (`src/content/team/team.yaml`)
-- participating institutions (`src/content/institutions/institutions.yaml`)
-- webinars (`src/content/team/team.yaml`)
+The content for this website lives as YAML files inside the `content`.
 
 ## Branding
 
