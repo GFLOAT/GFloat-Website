@@ -3,22 +3,12 @@ import Seo from '../components/layout/seo'
 import BreadcrumbNav from '../components/layout/breadcrumbs'
 import { Box, Button, Container, Stack, Typography } from "@mui/material"
 import { useTheme } from '@mui/material/styles'
-
-const resources = [
-  {
-    title: 'Lorem ipsum sed' ,
-    description: 'Visit our Github repository to access the latest version of the resources release.',
-    url: 'https://github.com/G-FLOAT',
-  },
-  {
-    title: 'Eu ad exercitation' ,
-    description: 'Nisi anim amet irure nisi officia dolor aliquip sint nisi reprehenderit. Lorem ipsum incididunt duis anim veniam reprehenderit pariatur reprehenderit in sint ullamco est ut sed ut deserunt id minim.',
-    url: 'https://github.com/G-FLOAT',
-  },
-]
+import { useResources } from '../hooks'
 
 const ResourcesPage = () => {
   const theme = useTheme()
+  const resources = useResources()
+
   const styles = {
     container: {
       display: 'flex',

@@ -16,8 +16,7 @@ Spin up the development server on [http://localhost:8000](http://localhost:8000)
 
 ## Content Management
 
-You will be able to access the content via an interactive GraphQL playground at [http://localhost:8000/__graphql](http://localhost:8000/__graphql) in your browser.
-The content for this website lives as YAML files inside the `content`.
+See [CONTENT.md](CONTENT.md) for desriptions of the available content slots.
 
 ## Branding
 
@@ -25,8 +24,6 @@ The content for this website lives as YAML files inside the `content`.
 - Colors: 
   - primary: #556270
   - secondary: #DC143C
-- MUI components with theme and sx prop customization
-
 
 ## 🎁 Deployment
 

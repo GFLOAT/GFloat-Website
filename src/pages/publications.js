@@ -48,8 +48,7 @@ const Webinar = ({ title, description, date, url }) => {
 }
 
 const PublicationPage = () => {
-  const webinars = usePublications()[0]
-  const papers = usePublications()[1]
+  const { papers, webinars } = usePublications()
 
   const styles = {
     title: {

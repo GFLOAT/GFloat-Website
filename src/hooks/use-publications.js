@@ -21,5 +21,8 @@ const publicationsQuery = graphql`query publicationsQuery {
 
 export const usePublications = () => {
   const { webinars, papers } = useStaticQuery(publicationsQuery)
-  return [ webinars.nodes, papers.nodes ]
+  return {
+    webinars: webinars.nodes,
+    papers: papers.nodes,
+  }
 }
