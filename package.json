@@ -1,9 +1,9 @@
 {
-  "name": "neurobridge-website",
+  "name": "g-float-website",
   "private": true,
-  "description": "A website sharing information about the NeuroBridge project.",
+  "description": "A informational website about the G-FLOAT project.",
   "version": "0.1.0",
-  "author": "Suejin Kim <sjkim@renci.org>",
+  "author": "mbwatson",
   "dependencies": {
     "@emotion/react": "^11.10.6",
     "@emotion/styled": "^11.10.6",

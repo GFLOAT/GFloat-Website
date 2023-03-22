@@ -61,6 +61,6 @@ image:
 
 Deploy the new release with the following command.
 ```bash
-helm upgrade --install neurobridges-website kubernetes -n neurobridges -f kubernetes/prod_values.yaml
+helm upgrade --install gfloat-website kubernetes -n gfloat -f kubernetes/prod_values.yaml
 ```
 > Note: The values in YAML files included with the `-f` flag will overwrite defaults in `values.yaml`.
